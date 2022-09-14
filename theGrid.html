@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-navbar {
+        display: grid;
+
+        grid-template-columns: 20vw 20vw 20vw 40vw;
+
+        grid-template-rows: 20vh;
+      }
+      .grid-producten {
+        display: grid;
+
+        grid-template-columns: auto 20vw 20vw 20vw auto;
+
+        grid-template-rows: 20vw 20vw;
+        background-color: gold;
+      }
+
+      .productena1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: purple;
+      }
+
+      .productena {
+        grid-column: 2/3;
+
+        grid-row: 1/2;
+
+        background-color: yellow;
+      }
+      .productenb {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-color: lime;
+      }
+      .productenb1 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-color: rgb(153, 0, 255);
+      }
+      img {
+        object-fit: contain;
+
+        height: auto;
+
+        width: 20vw;
+      }
+      .productenc {
+        grid-column: 4/5;
+
+        grid-row: 1/2;
+
+        background-color: rgb(255, 0, 43);
+      }
+
+      .productenc1 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(20px + 3vw);
+        background-color: rgb(97, 212, 241);
+
+        grid-column: 1/4;
+
+        grid-row: 1/2;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(7px + 1vw);
+        background-color: rgb(97, 241, 128);
+        grid-column: 4/5;
+
+        grid-row: 1/2;
+      }
+      .menu > ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+    </style>
+
+    <title>E-mail JS form</title>
+  </head>
+
+  <body>
+    <div class="grid-navbar">
+      <div class="navbar">stepshop</div>
+      <div class="menu">
+        <ul>
+          <li>step</li>
+          <li>hoverboard</li>
+          <li>fiets</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid-producten">
+      <div class="productena">
+        <img
+          src="https://www.turbo.fr/sites/default/files/migration/model/field_image/000000007237474.jpg"
+          alt="classe c"
+        />
+      </div>
+      <div class="productenb">
+        <img
+          src="https://www.turbo.fr/sites/default/files/migration/model/field_image/000000007237474.jpg"
+          alt="classe c"
+        />
+      </div>
+      <div class="productenc">
+        c
+        <img
+          src="https://www.tuningblog.eu/wp-content/uploads/2021/02/BBG63AMG-Front.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="productena1">
+        <img
+          src="https://www.turbo.fr/sites/default/files/migration/model/field_image/000000007237474.jpg"
+          alt="classe c"
+        />
+      </div>
+      <div class="productenb1">b</div>
+
+      <div class="productenc1">
+        c
+        <img
+          src="https://www.tuningblog.eu/wp-content/uploads/2021/02/BBG63AMG-Front.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
